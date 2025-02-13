@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/conversor.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+  <title>Real para Dólar</title>
+</head>
+<body>
+  <center>
+    <h1>Conversor de Real para Dólar</h1>
+    <div class="container">
+      <h2 class="page-title">
+        Conversor de moedas
+      </h2>
+    </div>  
+
+    <div id="meio">
+      <section>
+        <input type="text" name="txt" placeholder="Ex: 20" id="pequena"><br>
+
+        <select id="p1">
+          <option>Estados Unidos, Dollar (USD)</option>
+          <option>Brasil, Real (BRL)</option>
+        </select>
+        <br>
+        <span class="material-symbols-outlined">arrow_downward</span>
+        <br>
+        <select id="p2">
+          <option>Brasil, Real (BRL)</option>
+          <option>Estados Unidos, Dollar (USD)</option>
+        </select>
+        <br>
+        <input type="button" value="CONVERTER" onclick="gerar()" id="botao">
+
+        <h1 id="conversoJanela"></h1>
+
+        <p>1 USD = 5,52 BRL</br>1 BRL = 0,18 USD</p>
+      </section> 
+      <br>
+      <a href="index.html" class="inicio">Voltar à página inicial</a>
+      <a href="portifolio.html" class="inicio">Voltar ao portifolio </a>
+    </div>
+  </center>
+  
+  <script src="src/js/conversorDolar.js"></script>
+</body>
+</html>

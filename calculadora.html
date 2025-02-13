@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="src/css/calculadora.css">
+  <title>Calculadora básica</title>
+</head>
+  </style>
+<body>
+  <h1> Calculadora básica </h1>
+  <div class="calculadora">
+    <input type="text" disabled id="display">
+    <div class="box-buttons">
+      <button onclick="cleanDisplay()">C</button>
+      <button onclick="backspace()">⌫</button>
+      <button onclick="insertDisplay('/')">/</button>
+      <button onclick="insertDisplay('*')">*</button>
+      <button onclick="insertDisplay('7')">7</button>
+      <button onclick="insertDisplay('8')">8</button>
+      <button onclick="insertDisplay('9')">9</button>
+      <button onclick="insertDisplay('-')">-</button>
+      <button onclick="insertDisplay('4')">4</button>
+      <button onclick="insertDisplay('5')">5</button>
+      <button onclick="insertDisplay('6')">6</button>
+      <button onclick="insertDisplay('+')">+</button>
+      <button onclick="insertDisplay('1')">1</button>
+      <button onclick="insertDisplay('2')">2</button>
+      <button onclick="insertDisplay('3')">3</button>
+      <button class="btn-zero" onclick="insertDisplay('0')">0</button>
+      <button onclick="insertDisplay('.')">.</button>
+      <button class="btn-resultado" onclick="resultado()">=</button>
+  </div>
+    <br>
+    <a href="index.html" class="inicio">Voltar a página inicial </a>
+    <a href="portifolio.html" class="inicio">Voltar ao portifolio </a>
+</body>
+<script src="src/js/calculadora.js"></script>
+</html>
